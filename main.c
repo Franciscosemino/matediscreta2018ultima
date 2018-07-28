@@ -112,7 +112,7 @@ for(u32 i=0; i<100;i++){
 		OrdenNatural(g);
 		natural=NotSoGreedy(g,i);
 	} else {
-		ReordenManteniendoBloqueColores(g,2);
+		ReordenManteniendoBloqueColores(g,i);
 		bloque=NotSoGreedy(g,i);
 
 	}
@@ -121,6 +121,7 @@ for(u32 i=0; i<100;i++){
 	if (!(bloque<=natural)){
 		printf("ERRORRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR\n");
 	}
+
 }
 /*--------------------------------------------------------------- */
 		/*

@@ -99,7 +99,7 @@ void ReordenManteniendoBloqueColores(Grafo G,u32 x) {
 				}
 			}
 			for(u32 i=0;i<NumeroDeColores(G);i++){
-				u32 color = array_rand[1];
+				u32 color = array_rand[i];
 				for(u32 j = 0; j<NumeroDeVertices(G);j++){
 					if(ColorDelVertice(G,j)==color){
 						G->orden[j]->x_aleatorio=i;
