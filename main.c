@@ -108,19 +108,17 @@ printf("/*----------------------------------------------------------------------
 printf("TERCERAS 10 ITERACIONES ALTERNANDO ENTRE ORDEN NATURAL O BLOQUE COLOR CON X > 1\n");
 printf("/*--------------------------------------------------------------------------------- */\n");
 for(u32 i=0; i<100;i++){
-	if (i % 2 == 0) {
-		OrdenNatural(g);
-		natural=NotSoGreedy(g,i);
-	} else {
-		ReordenManteniendoBloqueColores(g,i);
-		bloque=NotSoGreedy(g,i);
-
-	}
+	OrdenNatural(g);
+	natural=NotSoGreedy(g,i);
+	ReordenManteniendoBloqueColores(g,i);
+	bloque=NotSoGreedy(g,i);
 	printf("NATURAL: %u\nBLOQUE; %u\n",natural, bloque );
 
 	if (!(bloque<=natural)){
 		printf("ERRORRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR\n");
 	}
+
+
 
 }
 /*--------------------------------------------------------------- */
