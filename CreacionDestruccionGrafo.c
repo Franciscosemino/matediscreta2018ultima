@@ -117,5 +117,6 @@ void DestruccionDelGrafo(Grafo g){
 			free(g->vertices[i].vecinos);
 	free(g->vertices);
 	free(g->orden);
+	free(g->facil_busqueda);	
 	free(g);
 }
